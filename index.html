@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Project 1 -- Forge VIDE</title>
+        
+        <!-- Bootstrap -->
+        <link href="css/tree.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                color: #fff;
+                background-color: #222;
+            }
+            /* Sticky footer styles
+            -------------------------------------------------- */
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /* Set the fixed height of the footer here */
+                height: 21px;
+                border-top: 1px solid black;
+                color: #4d4d4d;
+            }
+            /* Panel style */
+            .panel-box {
+                border-radius: 5px;
+                border: 1px solid black;
+                padding: 5px;
+            }
+            .panel-box-title {
+                border-bottom: 1px solid black;
+                text-transform: capitalize;
+                color: #9D9D9D;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* The folder tree */
+            .folders {
+                list-style-type: none;
+                padding: 0 10px 0 10px;
+            }
+            .folders a, .folders a:visited, .folders a:hover, .folders a:active {
+                color: white;
+                text-decoration: none;
+                cursor: default;
+            }
+            .folders a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forge</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">New Project</a></li>
+                                        <li><a href="#">New Namespace</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Open Project</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Preferences</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Exit</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Generate</a></li>
+                                <li><a href="#">Run</a></li>
+                                <li><a href="#">Simulate</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="panel-box">
+                        <div class="panel-box-title">
+                            project name
+                        </div>
+                        <div class="panel-box-content">
+                            <ul class="folders">
+                                <li>
+                                    <a>
+                                        <span class="glyphicon glyphicon-folder-close"></span> Closed folder 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="glyphicon glyphicon-folder-open"></span> Open folder 2
+                                    </a>
+                                    <ul class="folders">
+                                        <li>
+                                            <a>
+                                                <span class="glyphicon glyphicon-file"></span> File 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="glyphicon glyphicon-file"></span> File 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    the workspace
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <span><b>NS:</b> Some > NS > Here</span> |
+                <span><b>Elements:</b> 200</span> |
+            </div>
+        </footer>
+    </body>
+</html>
